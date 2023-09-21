@@ -1,0 +1,475 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Shavian&family=Open+Sans:wght@300;400;500&family=Roboto&family=Sora:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Shavian&family=Open+Sans:wght@300;400;500&family=Roboto&family=Sora:wght@200&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.colorBlanco{
+    color:white
+}
+
+.colorGris{
+    color:rgb(147, 150, 152);
+}
+
+.colorVerde{
+    color: rgb(41, 167, 68)
+}
+.encabezado{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: rgb(53, 58, 64);
+    color: beige;
+    align-items: center;
+}
+
+ul{ 
+    display: flex;
+    list-style: none;
+    margin:0;
+    padding: 0px;
+
+}
+
+li a{
+    text-decoration: none;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    
+}
+
+
+.logo{
+    width: 230px;
+    padding: 20px 20px 20px 80px;
+}
+
+.encabezado h2{
+    font-family: 'Noto Sans Shavian', sans-serif;
+    padding-left: 5px;
+    padding-right: 200px;
+    font-weight: 500;
+}
+ 
+/*estilado conferencia*/
+
+.conferencia{
+    text-align: right;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(../assets/img/ba1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    margin-top: 0;
+    
+}
+
+.textoConf{
+    display: flex;
+    flex-direction: column;
+    font-family: open sans;
+    padding: 250px 20px 20px 50px;
+    line-height: 30px;
+    font-size: 17px;
+    font-weight: 400;
+    margin-left: 650px;
+    margin-right: 80px;
+}
+
+.conferencia a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-right:10px;
+}
+.anclas{
+    margin-right: 90px;
+}
+.conferencia a:hover{
+    background: rgba(128, 128, 128, 0.554);
+    transition: 1s;
+}
+
+.botonOrador{
+    font-family: 'Noto Sans Shavian', sans-serif;;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: 0.5s;
+   
+}
+
+.botonComprar{
+    font-family: 'Noto Sans Shavian', sans-serif;
+    border-radius: 10px;
+    background-color: rgb(41, 167, 68);
+}
+/* estilos de la seccion oradores*/
+main h2{
+    padding: 20px;
+    text-align: center;
+    height: 100px;
+    background: white;
+    font-family: open sans;
+    font-weight: 200;
+    font-size: medium;
+
+
+}
+.tituloOradores{
+    font-family: open sans;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.oradores{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+}
+
+.imgOra{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px 5px 0 0;
+    margin-left: 40px;
+}
+.contenido{
+    width: 300px;
+    border-left: 0.5px solid rgb(222, 217, 217);
+    border-bottom: 0.5px solid rgb(222, 217, 217);
+    border-right: 0.5px solid rgb(222, 217, 217);
+    margin-left: 40px;
+    height: 220px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.contenido p{
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size: small;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.tituloAmarillo{
+    display: inline-block;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    background-color: rgb(248, 196, 14);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.tituloCeleste{
+    display: inline-block;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    background-color: rgb(29, 159, 183);
+    border-radius: 5px;
+    padding: 3px;
+    color: white;
+}
+
+.tituloGris{
+    display: inline-block;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    background-color: rgb(106, 116, 126);
+    border-radius: 5px;
+    padding: 3px;
+    color: white;
+}
+
+.tituloRojo{
+    display: inline-block;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    background-color: rgb(227,56 ,72 );
+    border-radius: 5px;
+    padding: 3px;
+    color: white;
+}
+.orador{
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size: medium;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+/*estilos de lugar y fecha*/
+
+.lugarFecha{
+    display: flex;
+    border-top: 1px solid white;
+}
+
+.lugar{
+    background: rgb(53, 58, 64);
+    border-left:white 1px solid;
+    padding-left: 10px;
+
+}
+
+.lugar h2{
+    display: inline-block;
+    background: rgb(53,58,64);
+    color: white;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size: large;
+    font-weight: 700;
+    padding-left: 10px;
+    height: 80px;
+
+}
+
+.lugar p{
+    color: white;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size: small;
+    font-weight: 300;
+    line-height: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.conoceMas a{
+    text-decoration: none;
+    color: white;
+    
+}
+.conoceMas{
+    display: inline-block;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px;
+}
+.imagenHonolulu{
+    display: flex;
+}
+
+
+/*estilos formulario*/
+form{
+    margin: 0 auto;
+}
+
+.contenidoForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+}
+
+.formulario h2{
+    font-family: 'Noto Sans Shavian', sans-serif;
+    text-align: center;
+    font-size: medium;
+    font-weight: 300;
+    color: rgb(48, 47, 47);
+}
+.tituloOrador{
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size: xx-large;
+    font-weight: 700;
+    color: rgb(48, 47, 47);
+}
+.datos{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-top: 15px;
+    padding-bottom: 3px;
+
+}
+
+.formulario p{
+    text-align: center;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    color: rgb(48, 47, 47);
+}
+.contenidoForm p{
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size:small;
+    color: rgb(156, 152, 152);
+}
+
+input:hover{
+    background: rgb(223, 218, 218);
+}
+
+input:focus{
+    background: rgb(203, 193, 193);
+}
+input{
+    width: 230px;
+}
+
+textarea:hover{
+    background: rgb(223, 218, 218);
+}
+
+textarea{
+    width: 500px;
+    font-family: 'Noto Sans Shavian', sans-serif;
+}
+
+input{
+    padding: 5px;
+    font-family: 'Noto Sans Shavian', sans-serif;
+}
+
+.name{
+    margin-right: 40px;
+}
+
+.botonEnviar input{
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    background-color: rgb(150,201,62);
+    border-radius: 5px;
+    width: 500px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+
+/* estilado footer */
+
+footer{ 
+    background: linear-gradient(to right, rgb(28, 54, 67), rgb(29, 82, 113));
+    height: 80px;
+    padding-top: 20px;
+    text-align: center;
+    align-items: center;
+}
+.footer a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size: 15px;
+    
+}
+.footerAnclas{
+    display: inline-block;
+    width: 120px;
+}
+    
+
+/*tickets*/
+.titulo{
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+    text-align: center;
+    background-color:  rgb(99, 145, 218);
+    height: 50px;
+    color: white;
+}
+
+.compraTickets{
+    height: 480px;
+    background-color: rgb(238, 235, 235);
+}
+
+.ventas{
+    background-color: rgb(208, 205, 205);
+    border: 3px solid rgb(150, 148, 148);
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.comprar{
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(14, 59, 243);
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+.tickets{
+    display: inline-block;
+    width: 250px;
+    padding: 20px;
+
+}
+
+/* estilado 404 */
+
+
+.main404{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 500px;
+    border: 2px solid rgb(193, 194, 198);
+    border-radius: 20px;
+    width: 300px;
+
+}
+
+.imagen404{
+    display: inline-block;
+    margin: 0 auto;
+    width: 270px;
+}
+
+.main404 img{
+    margin-top: 30px;
+}
+
+.titulo404{
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.error{
+    font-family: 'Noto Sans Shavian', sans-serif;
+    font-size: 45px;
+    text-align: center;
+    color: red
+}
+
+
+
+
+
+
+
+
+
+
+
+
