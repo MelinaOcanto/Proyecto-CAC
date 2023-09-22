@@ -11,6 +11,8 @@ html{
     scroll-behavior: smooth;
 }
 
+
+
 .colorBlanco{
     color:white
 }
@@ -64,7 +66,10 @@ li a{
 /*estilado conferencia*/
 
 .conferencia{
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
     color: white;
     background-image: linear-gradient(
         0deg,
@@ -75,19 +80,20 @@ li a{
     background-position: center;
     height: 650px;
     margin-top: 0;
-    
+    padding-right: 40px;    
 }
 
 .textoConf{
     display: flex;
     flex-direction: column;
+    justify-content:right;
+    text-align: right;
+    width: 50%;
     font-family: open sans;
-    padding: 250px 20px 20px 50px;
     line-height: 30px;
     font-size: 17px;
-    font-weight: 400;
-    margin-left: 650px;
-    margin-right: 80px;
+    font-weight: 400; 
+    padding-bottom: 50px;
 }
 
 .conferencia a{
@@ -96,9 +102,8 @@ li a{
     padding: 10px;
     margin-right:10px;
 }
-.anclas{
-    margin-right: 90px;
-}
+
+
 .conferencia a:hover{
     background: rgba(128, 128, 128, 0.554);
     transition: 1s;
@@ -137,6 +142,9 @@ main h2{
 
 .oradores{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: 0 auto;
     width: 80%;
     text-align: left;
@@ -218,6 +226,7 @@ main h2{
 
 .lugarFecha{
     display: flex;
+    flex-wrap: wrap;
     border-top: 1px solid white;
 }
 
@@ -225,6 +234,7 @@ main h2{
     background: rgb(53, 58, 64);
     border-left:white 1px solid;
     padding-left: 10px;
+    width: 50%;
 
 }
 
@@ -265,8 +275,9 @@ main h2{
     padding: 5px;
     margin-left: 10px;
 }
-.imagenHonolulu{
-    display: flex;
+
+.lugarFecha img{
+    width: 50%;
 }
 
 
@@ -358,27 +369,26 @@ input{
 
 /* estilado footer */
 
-footer{ 
-    background: linear-gradient(to right, rgb(28, 54, 67), rgb(29, 82, 113));
-    height: 80px;
-    padding-top: 20px;
-    text-align: center;
+.footer{ 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
     align-items: center;
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px;
+    background: linear-gradient(to right, rgb(28, 54, 67), rgb(29, 82, 113));
 }
 .footer a{
-    text-align: center;
+    width: 80px;
     text-decoration: none;
-    color: white;
-    margin-left: 50px;
+    color:white;
     font-family: 'Noto Sans Shavian', sans-serif;
     font-size: 15px;
     
 }
-.footerAnclas{
-    display: inline-block;
-    width: 120px;
-}
-    
 
 /*tickets*/
 .titulo{
@@ -463,6 +473,13 @@ footer{
 }
 
 
+
+@media screen and (max-width: 576px ){
+    .textoConf{
+        
+        
+    }
+}
 
 
 
