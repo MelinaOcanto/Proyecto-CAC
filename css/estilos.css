@@ -243,7 +243,8 @@ main h2{
 }
 
 .lugar h2{
-    display: inline-block;
+    display: flex;
+    align-items: flex-start;
     background: rgb(53,58,64);
     color: white;
     font-family: 'Noto Sans Shavian', sans-serif;
