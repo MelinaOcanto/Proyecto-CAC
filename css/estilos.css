@@ -480,7 +480,7 @@ input{
 @media screen and (max-width: 576px ){
     .conferencia{
         flex-direction: column;
-        justify-content:space-around;
+        justify-content: space-around;
         align-items:center;
         text-align: center;
     }
@@ -498,6 +498,7 @@ input{
         flex-direction: column;
         justify-content:right;
         align-items: center;
+        width: 100%;
     }
     .footer{
         justify-content: space-around;
