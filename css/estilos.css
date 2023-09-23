@@ -477,17 +477,26 @@ input{
 
 
 
-@media screen and (max-width: 768px ){
+@media screen and (max-width: 576px ){
     .conferencia{
         flex-direction: column;
         justify-content:space-around;
         align-items:center;
         text-align: center;
     }
+
+    .tituloOradores{
+        text-align: center;
+        width: 100%;
+    }
+
+    .oradores{
+        margin: 0;
+     }
     
     .lugarFecha{
         flex-direction: column;
-        justify-content: space-between;
+        justify-content:right;
         align-items: center;
     }
     .footer{
