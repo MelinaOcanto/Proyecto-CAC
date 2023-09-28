@@ -26,9 +26,10 @@ header{
 .colorVerde{
     color: rgb(41, 167, 68)
 }
+
 .encabezado{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
     background: rgb(53, 58, 64);
     color: beige;
@@ -37,6 +38,8 @@ header{
 
 ul{ 
     display: flex;
+    flex-direction: row;
+    justify-content: right;
     list-style: none;
     margin:0;
     padding: 0px;
@@ -44,24 +47,32 @@ ul{
 }
 
 li a{
+    display: flex;
     text-decoration: none;
     font-family: 'Noto Sans Shavian', sans-serif;
     color: white;
     text-align: center;
     padding: 16px 16px;
-    
+
 }
 
 
 .logo{
-    width: 230px;
-    padding: 20px 20px 20px 80px;
+    display: flex;
+    width: 250px;
+    padding: 20px 20px 20px 50px;
+}
+
+.logoTitulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .encabezado h2{
     font-family: 'Noto Sans Shavian', sans-serif;
-    padding-left: 5px;
-    padding-right: 200px;
     font-weight: 500;
 }
  
@@ -146,6 +157,7 @@ main h2{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin: 0 auto;
     width: 80%;
@@ -478,21 +490,57 @@ input{
 
 
 @media screen and (max-width: 576px ){
-    .conferencia{
+    .encabezado{
         flex-direction: column;
-        justify-content: space-around;
-        align-items:center;
+
+    }
+
+    .encabezado h2{
+        font-size: 30px;
+    }
+    .logoTitulo{
+        flex-direction: column;
+    }
+
+    .logo{
+        width: 270px;
+        padding: 10px 3px 3px 3px;
+    }
+
+
+    ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .conferencia{
+        align-items: center;
+        padding-right: 0;
+    }
+
+    .conferencia p {
         text-align: center;
     }
 
+    .conferencia h1{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    
     .tituloOradores{
         text-align: center;
         width: 100%;
     }
 
-    .oradores{
+    .contenido{
         margin: 0;
-     }
+    }
+
+    .imgOra{
+        margin: 0;
+    }
     
     .lugarFecha{
         flex-direction: column;
@@ -500,9 +548,19 @@ input{
         align-items: center;
         width: 100%;
     }
-    .footer{
-        justify-content: space-around;
-        align-items: center;
-    }
-}
 
+    .lugar{
+        padding-bottom: 30px;
+    }
+
+
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        height: 100px;
+
+    }
+
+
+
+}
