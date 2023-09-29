@@ -489,7 +489,7 @@ input{
 
 
 
-@media screen and (min-width: 576px ){
+@media screen and (max-width: 576px ){
     .encabezado{
         flex-direction: column;
 
@@ -560,7 +560,48 @@ input{
         height: 100px;
 
     }
+}
 
+@media screen and (min-width: 360px ){
+    .textoConf{
+        padding: 0px 0px 20px 0px;
+    }
 
+    .conferencia h1{
+        padding: 0;
+        
+    }
+    .lugarFecha img{
+        width: 350px;
+    }
+    .lugar{
+        width: 350px;
+        padding-bottom: 20px;
 
+    }
+
+    .name{
+        margin-right: 2px;
+    }
+
+    form{
+        width: 360px;
+    }
+
+    input{
+        width: 150px;
+    }
+
+    textarea{
+        width: 360px;
+    }
+    .botonEnviar input{
+        width: 360px;
+    }
+
+    .footer{
+        flex-direction: column-reverse;
+        padding: 20px 0 20px 0;
+        height: 100px;
+    }
 }
