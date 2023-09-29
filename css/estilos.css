@@ -600,8 +600,16 @@ input{
     }
 
     .footer{
-        flex-direction: column-reverse;
-        padding: 20px 0 20px 0;
+        flex-direction: column;
+        padding: 0;
         height: 100px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .footer{
+        flex-direction: column;
+        height: 100px;
+
     }
 }
