@@ -606,7 +606,7 @@ input{
     }
 }
 
-@media screen and (max-width: 720px){
+@media screen and (min-width: 720px){
     .footer{
         flex-direction: column;
         height: 100px;
