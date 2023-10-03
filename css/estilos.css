@@ -417,11 +417,13 @@ input{
 }
 
 .compraTickets{
-    height: 480px;
     background-color: rgb(238, 235, 235);
+    padding-bottom: 150px;
 }
 
 .ventas{
+    display: flex;
+    flex-wrap: wrap;
     background-color: rgb(208, 205, 205);
     border: 3px solid rgb(150, 148, 148);
     width: 500px;
@@ -429,7 +431,7 @@ input{
     margin-top: 50px;
 }
 .comprar{
-    display: inline-block;
+    display: flex;
     text-decoration: none;
     background-color: rgb(14, 59, 243);
     font-family: 'Noto Sans Shavian', sans-serif;
@@ -438,10 +440,11 @@ input{
     margin: 20px;
     border-radius: 20px;
     color: white;
+    height: 70px;
 }
 
 .tickets{
-    display: inline-block;
+    display: flex;
     width: 250px;
     padding: 20px;
 
@@ -453,7 +456,9 @@ input{
 .main404{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -465,7 +470,7 @@ input{
 }
 
 .imagen404{
-    display: inline-block;
+    display: flex;
     margin: 0 auto;
     width: 270px;
 }
@@ -486,6 +491,52 @@ input{
     text-align: center;
     color: red
 }
+
+@media screen and (max-width: 360px ){
+    .textoConf{
+        padding: 0px 0px 20px 0px;
+    }
+
+    .conferencia h1{
+        padding: 0;
+        
+    }
+    .lugarFecha img{
+        width: 350px;
+    }
+    .lugar{
+        width: 350px;
+        padding-bottom: 20px;
+
+    }
+
+    .name{
+        margin-right: 2px;
+    }
+
+    form{
+        width: 360px;
+    }
+
+    input{
+        width: 150px;
+    }
+
+    textarea{
+        width: 360px;
+    }
+    .botonEnviar input{
+        width: 360px;
+    }
+
+    .footer{
+        flex-direction: column;
+        padding: 0;
+        height: 100px;
+    }
+
+}
+
 
 
 
@@ -560,56 +611,23 @@ input{
         height: 100px;
 
     }
-}
 
-@media screen and (max-width: 360px ){
-    .textoConf{
-        padding: 0px 0px 20px 0px;
-    }
-
-    .conferencia h1{
-        padding: 0;
-        
-    }
-    .lugarFecha img{
-        width: 350px;
-    }
-    .lugar{
-        width: 350px;
-        padding-bottom: 20px;
-
-    }
-
-    .name{
-        margin-right: 2px;
-    }
-
-    form{
-        width: 360px;
-    }
-
-    input{
-        width: 150px;
-    }
-
-    textarea{
-        width: 360px;
-    }
-    .botonEnviar input{
-        width: 360px;
-    }
-
-    .footer{
-        flex-direction: column;
-        padding: 0;
-        height: 100px;
+    /*media de tickets*/
+    .ventas{
+        width: 400px;
     }
 }
 
-@media screen and (min-width: 720px){
+
+@media screen and (max-width: 720px){
     .footer{
         flex-direction: column;
         height: 100px;
 
     }
 }
+
+
+/* responsive de la pagina 404*/
+
+
