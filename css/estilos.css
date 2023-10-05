@@ -500,6 +500,18 @@ input{
         padding: 0;
         
     }
+    .steve{
+        padding-bottom: 30px;
+    }
+
+    .bill{
+        padding-bottom: 30px;
+    }
+
+    .ada{
+        padding-bottom: 30px;
+    }
+    
     .lugarFecha img{
         width: 350px;
     }
@@ -593,7 +605,17 @@ input{
     .imgOra{
         margin: 0;
     }
-    
+    .steve{
+        padding-bottom: 30px;
+    }
+
+    .bill{
+        padding-bottom: 30px;
+    }
+
+    .ada{
+        padding-bottom: 30px;
+    }
     .lugarFecha{
         flex-direction: column;
         justify-content:right;
