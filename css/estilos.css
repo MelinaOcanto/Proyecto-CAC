@@ -497,18 +497,22 @@ input{
 
 @media screen and (max-width: 360px ){
     .textoConf{
-        padding: 0px 0px 20px 0px;
-        font-size: 13px;
+        padding-bottom: 10px;
+        font-size: 15px;
     }
 
     .conferencia h1{
         font-size: x-large;
+        padding: 0;
     }
 
     .botones{
-        padding-top: 40px;
-        padding-bottom: 20px;
+        display: flex;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-size: small;
     }
+
 
     .steve{
         padding-bottom: 30px;
