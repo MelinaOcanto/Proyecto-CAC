@@ -398,6 +398,7 @@ input{
     text-align: center;
     padding: 20px 100px 20px 100px;
     background: linear-gradient(to right, rgb(28, 54, 67), rgb(29, 82, 113));
+
 }
 .footer a{
     width: 80px;
@@ -422,6 +423,7 @@ input{
 .compraTickets{
     background-color: rgb(238, 235, 235);
     padding-bottom: 150px;
+
 }
 
 .ventas{
@@ -429,9 +431,9 @@ input{
     flex-wrap: wrap;
     background-color: rgb(208, 205, 205);
     border: 3px solid rgb(150, 148, 148);
-    width: 500px;
     margin: 0 auto;
     margin-top: 50px;
+    width: 50%;
 }
 .comprar{
     display: flex;
@@ -559,6 +561,12 @@ input{
     .footer a {
         width: 30%;
     }
+
+    .ventas{
+        justify-content: center;
+    }
+
+    
 }
 
 
