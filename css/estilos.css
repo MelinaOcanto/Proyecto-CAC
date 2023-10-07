@@ -549,7 +549,11 @@ input{
         flex-direction: column;
         justify-content: center;
         padding: 20px;
-    
+
+    }
+
+    .footer a {
+        width: 30%;
     }
 }
 
