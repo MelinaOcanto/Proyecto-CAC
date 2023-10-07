@@ -498,12 +498,18 @@ input{
 @media screen and (max-width: 360px ){
     .textoConf{
         padding: 0px 0px 20px 0px;
+        font-size: 13px;
     }
 
     .conferencia h1{
-        padding: 0;
-        
+        font-size: x-large;
     }
+
+    .botones{
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
     .steve{
         padding-bottom: 30px;
     }
@@ -541,10 +547,12 @@ input{
 
     .footer{
         flex-direction: column;
-        justify-content: space-between;
-        padding: 10px;
+        justify-content: center;
+        padding: 30px;
     }
-
+    .footerAnclas{
+        margin: 5px;
+    }
 }
 
 
