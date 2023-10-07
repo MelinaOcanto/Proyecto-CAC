@@ -548,10 +548,8 @@ input{
     .footer{
         flex-direction: column;
         justify-content: center;
-        padding: 30px;
-    }
-    .footerAnclas{
-        margin: 5px;
+        padding: 20px;
+    
     }
 }
 
