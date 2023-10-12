@@ -105,21 +105,17 @@ li a{
     border-radius: 10px;
     background-color: rgb(41, 167, 68);
 }
-/* estilos de la seccion oradores*/;
-
-
-.tituloO{
-    
-    padding: 20px;
-    text-align: center;
-    height: 100px;
-    background: white;
+/* estilos de la seccion oradores*/
+.titulo{
     font-family: open sans;
-    font-weight: 200;
-    font-size: medium;
-
+    font-weight: 700;
+    font-size: xx-large;
+    text-align: center;
+    height: 80px;
+    color: rgb(101, 94, 94);
 
 }
+
 .tituloOradores{
     text-align: center;
     font-family: open sans;
@@ -370,15 +366,8 @@ input{
 }
 
 /*tickets*/
-.titulo{
-    font-family: 'Noto Sans Shavian', sans-serif;
-    font-weight: 700;
-    font-size: xx-large;
-    text-align: center;
-    background-color:  rgb(99, 145, 218);
-    height: 50px;
-    color: white;
-}
+
+
 
 .compraTickets{
     background-color: rgb(238, 235, 235);
@@ -530,47 +519,8 @@ input{
 
 
 @media screen and (max-width: 576px ){
-    .encabezado{
-        flex-direction: column;
-
-    }
-
-    .encabezado h2{
-        font-size: 30px;
-    }
-    .logoTitulo{
-        flex-direction: column;
-    }
-
-    .logo{
-        width: 270px;
-        padding: 10px 3px 3px 3px;
-    }
-
-
-    ul{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    li a{
-        padding: 5px;
-    }
-
-
-    .tituloOradores{
-        text-align: center;
-        width: 100%;
-    }
-
-    .contenido{
-        margin: 0;
-    }
-
-    .imgOra{
-        margin: 0;
-    }
-   
+    
+    
     .lugarFecha{
         flex-direction: column;
         justify-content:right;
