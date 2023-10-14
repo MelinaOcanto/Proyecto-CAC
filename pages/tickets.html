@@ -41,13 +41,81 @@
           </nav> 
     </header> 
     
-    <main class="compraTickets">
-        <h1>Compra de tickets</h1>
-        <div class="ventas">
-            <img class="tickets" src="../assets/img/billete.png">
-            <a class="comprar" href="./404.html">Comprar tickets</a>
+    <section class="container-fluid d-flex justify-content-center">
+      <div class="row tarjetas flex-wrap justify-content-center">
+        
+        <div class="col md- 6 tarjeta1">
+          <h1>Estudiante</h1><br>
+          <p>Tienen un descuento</p><br>
+          <p class="porcentaje">80%</p><br>
+          <p>*presentar documentacion</p>
         </div>
-    </main>
+        
+        <div class="col md-6 tarjeta2">
+          <h1>Trainee</h1><br>
+          <p>Tienen un descuento</p><br>
+          <p class="porcentaje">50%</p><br>
+          <p>*presentar documentacion</p>
+        </div>
+
+        <div class="col md-6 tarjeta3">
+          <h1>Junior</h1><br>
+          <p>Tienen un descuento</p><br>
+          <p class="porcentaje">15%</p><br>
+          <p>*presentar documentacion</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section>
+       <div class="animacion">
+        <h2 class="tituloPequeño">Venta</h2>
+        <h2 class="tituloGrande">VALOR DE TICKET $200</h2>
+
+       </div>
+
+     <section class="formVentas" id="formVentas">
+        <div class="container contenidoFormVentas">
+            <form action="./pages/404.html" method="get">
+                <div class="vd">
+
+                    <div class="name">
+                        <input type="text" id="name" name="name" placeholder="Nombre" required>
+                    </div>
+                  
+                    <div class="ap">
+                        <input type="text" id="Apellido" name="Apellido" placeholder="Apellido" required>
+                    </div>
+                  
+                    <div class="email">
+                      <input type="email" id="correo" name="correo" placeholder="Correo Electronico" required>
+                    </div>
+                  
+                    <div>
+                      <input type="number"name="cantidad" placeholder="Cantidad" required>
+                    </div>
+                    <div>
+                      <label for="lang">Categoria</label>
+                      <select name="categoria" id="categoria">
+                        <option value="estudiante">Estudiante</option>
+                        <option value="trainee">Trainee</option>
+                        <option value="junio">Junior<option>
+                    </div>
+                </div>
+        
+                <div class="botonEnviar">
+                    <input type="submit" value="Enviar">
+                </div>
+                
+            </form>
+        </div>
+        
+
+      
+
+    </section>
     
     <footer>
       <div class="footer text-center">

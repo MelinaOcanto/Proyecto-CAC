@@ -108,14 +108,14 @@ li a{
 /* estilos de la seccion oradores*/
 .titulo{
     font-family: open sans;
-    font-weight: 700;
-    font-size: xx-large;
+    font-weight: 200;
+    font-size: large;
     text-align: center;
     height: 80px;
-    color: rgb(101, 94, 94);
+    color: rgb(10, 10, 10);
+    padding-top: 10px;
 
 }
-
 .tituloOradores{
     text-align: center;
     font-family: open sans;
@@ -128,7 +128,7 @@ li a{
     width: 300px;
     height: 300px;
     border-radius: 5px 5px 0 0;
-    margin: 0px 20px;
+    margin: 0px 0px;
 }
 .contenido{
     width: 300px;
@@ -369,38 +369,80 @@ input{
 
 
 
-.compraTickets{
-    background-color: rgb(238, 235, 235);
-    padding-bottom: 150px;
+.tarjetas{
+    padding: 30px 0px 30px 0px;
+    text-align: center;
+    justify-content: center;
+    font-family: open sans;
 }
 
-.ventas{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(208, 205, 205);
-    border: 3px solid rgb(150, 148, 148);
+.tarjeta1{
+    border: 1px solid blue;
+    margin: 5px;
+    height: 300px;
     width: 500px;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-.comprar{
-    display: flex;
-    text-decoration: none;
-    background-color: rgb(14, 59, 243);
-    font-family: 'Noto Sans Shavian', sans-serif;
-    font-size: 20px;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 20px;
-    color: white;
-    height: 70px;
 }
 
-.tickets{
-    display: flex;
-    width: 250px;
-    padding: 20px;
+.tarjeta1:hover{
+    background-color: rgba(0, 0, 255, 0.699);
+    transition: 2s;
+}
 
+.tarjeta2{
+    border:1px solid rgb(17, 221, 21);
+    margin: 5px;
+    height: 300px;
+}
+.tarjeta2:hover{
+    background-color: rgba(17, 221, 20, 0.766) ;
+    transition: 2s;
+
+}
+.tarjeta3{
+    border: 1px solid yellow;
+    margin: 5px;
+    height: 300px;
+}
+.tarjeta3:hover{
+    background-color: rgba(255, 255, 0, 0.708) ;
+    transition: 2s;
+}
+.porcentaje{
+    font-weight: 800;
+}
+
+.contenidoFormVentas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tituloPequeño{
+    font-size: large;
+    font-family: open sans;
+    text-align: center;
+
+}
+.tituloGrande{
+    font-size: 50px;
+    font-family: open sans;
+    font-weight: 550;
+    padding-bottom: 20px;
+    text-align: center;
+    
+
+}
+.animacion{
+    animation-name: miAnimanacion;
+    animation-duration: 1s;
+    position: relative;
+    animation-timing-function: linear;
+}
+
+@keyframes miAnimanacion {
+    0% {color:rgba(251, 247, 247, 0.658);}
+    50% {color: rgba(123, 120, 120, 0.658);}
+    100% {color: rgba(10, 10, 10, 0.658); }
 }
 
 /* estilado 404 */
@@ -536,14 +578,8 @@ input{
     .footer{
         flex-direction: column;
         justify-content: center;
-    
-
     }
 
-    /*media de tickets*/
-    .ventas{
-        width: 400px;
-    }
 }
 
 
@@ -570,8 +606,8 @@ input{
         padding: 0px;
         margin: 0px;
         width: 170px;
-
     }
+
     .logoTitulo{
         flex-direction: column;
         justify-content: center;
@@ -597,7 +633,7 @@ input{
     }
 
     .footer{
-        flex-direction: column;
-    
+        flex-direction: column;    
     }
-}
+
+} 
