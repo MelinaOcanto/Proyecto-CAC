@@ -52,18 +52,18 @@
             </div>
             <div class="botones">
                 <a class="botonOrador" href="#formularioOrador">Quiero ser orador</a>
-                <a class="botonComprar" href="./pages/404.html">Comprar tickets</a>
+                <a class="botonComprar" href="./pages/tickets.html">Comprar tickets</a>
             </div>
         </section>
     </header>
      
-    <main class="container-fluid" id="oradores">
+    <main class="container-fluid justify-content-center" id="oradores">
         <h2 class="titulo">CONOCE A LOS<div class="tituloOradores"> ORADORES</div></h2>
       
         
-        <section class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-4 cards">
+        <section class="container flex-wrap align-items-center justify-content-center">
+                    <div class="row conj">
+                        <div class="col-md-4 tarjOrad">
                             <img class="imgOra" src="./assets/img/steve.jpg" alt="Steve Jobs, mostrando un teléfono">
                             <div class="contenido">
                                 <h4 class="tituloAmarillo">JavaScript</h4>
@@ -76,7 +76,7 @@
                         </div>
                     
                 
-                        <div class="col-md-4  cards">
+                        <div class="col-md-4 tarjOrad" >
                             <img class="imgOra" src="./assets/img/bill.jpg" alt="Bill Gates">
                             <div class="contenido">
                                 <h4 class="tituloAmarillo">JavaScript</h4>
@@ -87,7 +87,7 @@
                             </div>
                         </div>
                     
-                        <div class="col-md-4 cards">
+                        <div class="col-md-4 tarjOrad">
                             <img class="imgOra" src="./assets/img/ada.jpeg" alt="Ada Lovelace">
                             <div class="contenido">
                                 <h4 class="tituloGris">Negocios</h4>
@@ -104,10 +104,10 @@
 
         <section class="container-fluid" id="lugarFecha">
             <div class="row lugarFecha">
-                <div class="col imgPlaya">
+                <div class="col-md-6 imgPlaya">
                     <img src="./assets/img/honolulu.jpg" class="w-100" alt="Foto de playa de la ciudad Honolulu, EE.UU">
                 </div>
-                <div class="col lugar">
+                <div class="col-md-6 lugar">
                     <h2>Bs As - Octubre</h2>
                     <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina. En los estados unidos, Honolulu es la 
                     más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área
@@ -169,5 +169,6 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./js/tickets.js"></script>
 </body>
 </html>

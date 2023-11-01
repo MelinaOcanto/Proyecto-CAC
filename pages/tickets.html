@@ -41,10 +41,10 @@
           </nav> 
     </header> 
     
-    <section class="container-fluid d-flex justify-content-center">
-      <div class="row tarjetas flex-wrap justify-content-center">
+    <section class="container flex-wrap align-items-center justify-content-center">
+      <div class="row tarjetas justify-content-center">
         
-        <div class="col md- 6 tarjeta1">
+        <div class="col md-6 tarjeta1">
           <h1>Estudiante</h1><br>
           <p>Tienen un descuento</p><br>
           <p class="porcentaje">80%</p><br>
@@ -68,54 +68,68 @@
       </div>
 
     </section>
-
-    <section>
-       <div class="animacion">
-        <h2 class="tituloPequeño">Venta</h2>
-        <h2 class="tituloGrande">VALOR DE TICKET $200</h2>
-
-       </div>
+    <div class="animacion">
+      <h2 class="tituloPequeño">Venta</h2>
+      <h2 class="tituloGrande">VALOR DE TICKET $200</h2>
+    </div>
 
      <section class="formVentas" id="formVentas">
-        <div class="container contenidoFormVentas">
-            <form action="./pages/404.html" method="get">
-                <div class="vd">
+        <div class="container flex-wrap justify-content-center align-items-center contenidoFormVentas">
+          <form action="" id= "miFormulario" onsubmit="return resumen()" method="get">
+           <div class="vd">
+             <div class="nombreApe">
+                <div class="nombre">
+                      <input type="text" id="nombre" name="name" placeholder="Nombre" required>
+                </div>
+              
 
-                    <div class="name">
-                        <input type="text" id="name" name="name" placeholder="Nombre" required>
-                    </div>
-                  
-                    <div class="ap">
-                        <input type="text" id="Apellido" name="Apellido" placeholder="Apellido" required>
-                    </div>
-                  
-                    <div class="email">
-                      <input type="email" id="correo" name="correo" placeholder="Correo Electronico" required>
-                    </div>
-                  
-                    <div>
-                      <input type="number"name="cantidad" placeholder="Cantidad" required>
-                    </div>
-                    <div>
-                      <label for="lang">Categoria</label>
-                      <select name="categoria" id="categoria">
-                        <option value="estudiante">Estudiante</option>
-                        <option value="trainee">Trainee</option>
-                        <option value="junio">Junior<option>
-                    </div>
+               <div class="apellido">
+                  <input type="text" id="apellido" name="Apellido" placeholder="Apellido" required>
                 </div>
-        
-                <div class="botonEnviar">
-                    <input type="submit" value="Enviar">
+              </div>
+                  
+              <div class="email">
+                <input type="email" id="correo" name="correo" placeholder="Correo Electronico" required>  
+              </div>
+                  
+              <div class="cantidadCat">
+                  <div class="cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" name="cantidad" id="cantidad" placeholder="Cantidad" required>
+                  </div>                      
+                  
+                  <div class="categoria">
+                    <label for="lang">Categoria</label>
+                    <select class="Categoria" id = "categoria" aria-label="seleccion">
+                      <option selected>--Seleccione--</option>
+                      <option value="1">Estudiante</option>
+                      <option value="2">Trainee</option>
+                      <option value="3">Junior</option>
+                    </select>
+                  </div> 
+              </div>
+              <div class="total">
+                <p id = "resultado">Total a pagar: $</p>
+              </div>
+              <div class="botonesTickets">
+                <div class="borrar">
+                  <input type="button" name="Borrar" onclick="borrar()" value="Borrar">
                 </div>
+                <div class="resumen">
+                  <input type="button" name="Resumen" onclick="return resumen()" value="Resumen">
+                </div>
+                <div id="error">
+
+                </div>
+               
                 
-            </form>
+              </div>
+              
+            </div>
+            </div> 
+          </form>
         </div>
-        
-
-      
-
-    </section>
+      </section>
     
     <footer>
       <div class="footer text-center">
@@ -132,7 +146,8 @@
          
           </div>
       </div>
-  </footer>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../js/tickets.js"></script>
 </body>
 </html>

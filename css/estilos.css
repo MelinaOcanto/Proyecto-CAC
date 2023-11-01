@@ -123,6 +123,14 @@ li a{
     font-size: 35px;
 }
 
+.tarjOrad{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .imgOra{
     width: 300px;
@@ -136,7 +144,7 @@ li a{
     border-left: 0.5px solid rgb(222, 217, 217);
     border-bottom: 0.5px solid rgb(222, 217, 217);
     border-right: 0.5px solid rgb(222, 217, 217);
-    margin: 0px 20px 20px 20px;
+    margin: 0px 0px 20px 0px;
     box-shadow: 2px 3px 10px rgb(232, 230, 230);
     height: 220px;
     padding: 20px;
@@ -148,6 +156,7 @@ li a{
     font-weight: 300;
     line-height: 20px;
 }
+
 
 .tituloAmarillo{
     display: inline-block;
@@ -223,6 +232,7 @@ li a{
     font-size: large;
     font-weight: 700;
     padding-left: 10px;
+    padding-top: 20px;
     height: 80px;
 
 }
@@ -259,9 +269,6 @@ li a{
 .imgPlaya{
     padding: 0;
 }
-
-
-
 
 /*estilos formulario*/
 form{
@@ -357,7 +364,7 @@ input{
     background: linear-gradient(to right, rgb(28, 54, 67), rgb(29, 82, 113));
 }
 .footer a{
-    width: 70px;
+    width: 50px;
     text-decoration: none;
     color:white;
     font-family: 'Noto Sans Shavian', sans-serif;
@@ -411,12 +418,6 @@ input{
     font-weight: 800;
 }
 
-.contenidoFormVentas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .tituloPequeño{
     font-size: large;
     font-family: open sans;
@@ -429,12 +430,10 @@ input{
     font-weight: 550;
     padding-bottom: 20px;
     text-align: center;
-    
-
 }
 .animacion{
     animation-name: miAnimanacion;
-    animation-duration: 1s;
+    animation-duration: 2s;
     position: relative;
     animation-timing-function: linear;
 }
@@ -445,24 +444,129 @@ input{
     100% {color: rgba(10, 10, 10, 0.658); }
 }
 
-/* estilado 404 */
-
-
-.main404{
+.contenidoFormVentas{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    height: 500px;
-    border: 2px solid rgb(193, 194, 198);
-    border-radius: 20px;
-    width: 300px;
+    align-items: center;
 
 }
+
+.vd input{
+    width: 100%;
+}
+.nombreApe{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 20px;
+}
+
+.nombre{
+    width: 345px;
+    padding: 0px 10px 0px 10px;
+}
+
+.apellido{
+    width: 345px;
+    
+}
+
+.email{
+    width: 700px;
+    margin: 20px;
+    padding: 0px 10px 0px 10px;
+}
+
+.cantidadCat{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 20px;
+    
+}
+
+.cantidad{
+    width: 340px;
+    height: 50px;
+    padding: 0px 10px 0px 10px;
+}
+
+.categoria{
+    width: 340px;
+}
+
+.categoria select{
+    display: flex;
+    height: 37px;
+    width: 350px;
+}
+
+.total{
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+    width: 680px;
+    background: rgb(152, 201, 242);
+    border-radius: 7px;
+    height: 50px;
+    color: rgb(1, 1, 137);
+    margin: 20px;
+    padding: 0px 10px 0px 10px;
+    width: 700px;
+}
+
+.total p{
+    font-size: 17px;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+.botonesTickets{
+    display: flex;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-family: 'Noto Sans Shavian', sans-serif;
+   
+}
+
+.borrar input{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    width: 350px;
+    height: 45px;
+    margin-right: 10px;
+    border-radius: 7px;
+    border-color: white;
+    background-color: rgb(114, 204, 50);
+
+}
+
+.resumen input{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    width: 350px;
+    margin-left: 10px;
+    height: 45px;
+    border-radius: 7px;
+    border-color: white;
+    background-color: rgb(114, 204, 50);
+
+}
+
+
+/* estilado 404 */
 
 .imagen404{
     display: flex;
@@ -482,7 +586,7 @@ input{
 
 .error{
     font-family: 'Noto Sans Shavian', sans-serif;
-    font-size: 45px;
+    font-size: 40px;
     text-align: center;
     color: red
 }
@@ -532,86 +636,212 @@ input{
         width: 100%;
     }
 
-    form{
-        width: 360px;
+    .conoceMas{
+        margin-bottom: 20px;
+    }
+
+    form{ 
+        width: 340px;
     }
 
     input{
+        
         width: 150px;
+
     }
 
     textarea{
-        width: 360px;
+        width: 340px;
     }
     .botonEnviar input{
-        width: 360px;
+        width: 340px;
     }
 
-    .footer{
-        padding: 10px;
-        height: 30vh;
+    .footer {
+        height: 165px;
 
     }
+
+    
     .footer a{
         width: 100px;
         padding: 10px;
     }
 
-}
-
-
-@media screen and (max-width: 576px ){
-    
-    
-    .lugarFecha{
+    .nombreApe{
+        display: flex;
         flex-direction: column;
-        justify-content:right;
+    }
+
+    .nombre{
+        padding-bottom: 20px;
+    }
+    .apellido{
+        padding: 0px 10px;
+    }
+
+    .nombre input{
+        width: 300px;
+    }
+
+    .apellido input{
+        width: 300px;
+    }
+
+    .email input{
+        width: 300px;
+
+    }
+
+    .cantidadCat{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cantidad{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin-bottom: 20px;
+
+    }
+
+    .cantidad input{
+        width: 300px;
+    }
+
+    .categoria{
+        padding: 0px 10px;
+    }
+
+    .categoria select{
+        width: 300px;
+    }
+
+    .total{
+        width: 300px ;
+    }
+
+
+
+    .botonesTickets{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        width: 300px;
+        
+        
+    }
+
+    .resumen input{
+        width: 300px;
+        margin: 0px 0px 0px 0px;
+        padding: 0;
+    }
+
+    .borrar input{
+        width: 300px;
+        padding: 0;
+        margin: 0;
+    }
+
+}
+/*
+@media screen and (max-width: 576px ){
+    .lugar{
+    
         width: 100%;
     }
 
-    .lugar{
-        padding-bottom: 30px;
+    .imgPlaya{
+        width: 100%;
     }
 
 
     .footer{
+        padding: 10px;
+        height: 40vh;
+    }
+
+
+    .footer a{
+        width: 150px;
+        padding: 15px;
+    }
+
+    .nombreApe{
+        display: flex;
         flex-direction: column;
-        justify-content: center;
+    }
+
+    .nombre{
+        width: 460px;
+        padding-bottom: 20px;
+    }
+
+    .apellido{
+        width: 460px;
+        padding: 0px 10px;
+    }
+
+
+
+    .total{
+        width: 460px;
+    }
+
+    .email{
+         width: 460px;
+         margin: 20px;
+    }
+
+    .cantidadCat{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cantidad{
+        width: 460px;
+         
+
+    }
+    .categoria{
+        padding: 0px 10px;
+    
+    }
+
+    .categoria select{
+         width: 300px;
+    }
+
+    .categoria label{
+        margin-top: 20px;
+    }
+
+    .botonesTickets{
+     
+        width: 460px;
+     
+     
+    }
+
+    .resumen input{
+        width: 200px;
+    }
+
+    .borrar input{
+        width: 200px;
+
     }
 
 }
 
 
+*/
+/*
 @media screen and (max-width: 768px){
-    .encabezado{
-        flex-direction: column;
-    }
-
-    .encabezado h2{
-        padding-bottom: 10px;
-    }
-
-    ul{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    li a{
-        padding: 5px;
-    }
-
-    .logo{
-        padding: 0px;
-        margin: 0px;
-        width: 170px;
-    }
-
-    .logoTitulo{
-        flex-direction: column;
-        justify-content: center;
-    }
     .conferencia{ 
         flex-direction: column;
         justify-content: center;
@@ -623,6 +853,23 @@ input{
         text-align: center;
     }
 
+    .conj{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .tarjOrad{
+        width: 300px;
+        padding: 0px 0px;
+        margin: 0px 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
     .lugarFecha{
         flex-direction: column;
         align-items: center;
@@ -630,10 +877,14 @@ input{
 
     .lugar{
         padding: 20px;
+        width: 100%;
     }
 
     .footer{
-        flex-direction: column;    
+        h;
+        text-align: center;
+        
     }
 
+    
 } 
