@@ -1,40 +1,123 @@
-var nombre = document.getElementById("nombre");
-var apellido = document.getElementById("apellido");
-var correo = document.getElementById("correo");
-var cantidad = document.getElementById("cantidad");
-var categoria = document.getElementById("categoria") ;
-var error = "";
+const valorBase = 200;
+
+let descuentoEstudiante = 80;
+let descuentoTrainee = 50;
+let descuentoJunior = 15;
 
 
 
-function validarCampos(){
-    var error = "";
+let nombre = document.getElementById("nombre");
+let errorNombre = document.getElementById("errorNombre");
+let apellido = document.getElementById("apellido");
+let errorApellido = document.getElementById("errorApellido");
+let email = document.getElementById("email");
+let errorEmail = document.getElementById("errorEmail");
+let cantidad = document.getElementById("cantidad");
+let errorCantidad = document.getElementById("errorCantidad");
+let categoria = document.getElementById("categoria") ;
+let errorCategoria = document.getElementById("errorCategoria");
 
-    if (nombre.value=== ""){
-        error = "Escriba su nombre";
+
+const quitarError = () => {
+    let listaNodos = document.querySelectorAll(".form-control, .form-select");
+    for(let i= 0; i < listaNodos.length; i ++){
+        listaNodos[i].classList.remove("is-invalid");
+    }
+    let listaNodosDiv = document.querySelectorAll(".invalid-feedback");
+    for(let i= 0; i < listaNodosDiv.length; i ++){
+        listaNodosDiv[i].classList.remove("mostrar");
+    }
+}
+
+const validarCampos = () => {
+
+    quitarError();
+
+    if (nombre.value === ""){
+        nombre.classList.add("is-invalid");
+        errorNombre.classList.add("mostrar");
         nombre.focus();
+        return;
         
-    }else if (apellido.value=== ""){
-        error = "Escriba su Apellido";
+    }if (apellido.value=== ""){
+        apellido.classList.add("is-invalid");
+        errorApellido.classList.add("mostrar");
         apellido.focus();
-        
+        return;
 
-    }else if (correo.value=== ""){
-        error = "Ingrese un Correo electronico valido";
+    }if(email.value === ""){
+        email.classList.add("is-invalid");
+        errorEmail.classList.add("mostrar");
+        email.focus();
+        return;
+    
+    }
+    const emailValido = mail =>{
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail);
+    }
+    if (!emailValido(email.value)){
+        email.classList.add("is-invalid");
+        errorEmail.classList.add("mostrar");
+        email.focus();
+        return;
+    }
+
+    if ((cantidad.value == 0) || (isNaN(cantidad.value))) {
+        cantidad.classList.add("is-invalid");
+        errorCantidad.classList.add("mostrar");
+        cantidad.focus();
+        return;
+    }
+
+    if(categoria.value == ""){
+        categoria.classList.add("is-invalid");
+        categoria.focus();
+        return;
+    }
+
+//declaro una variable de tipo number
+
+    let totalValorTickets = (cantidad.value) * valorBase;;
+
+    switch(categoria.value){
+        case "0":
+            totalValorTickets = totalValorTickets;
+            break;
+        case "1":
+            totalValorTickets = totalValorTickets - (descuentoEstudiante / 100 * totalValorTickets);
+            break;
+        case "2":
+            totalValorTickets = totalValorTickets - (descuentoTrainee / 100 * totalValorTickets);
+            break;
+        case "3":
+            totalValorTickets = totalValorTickets - (descuentoJunior / 100 * totalValorTickets);
+            break;  
+    }
+    totalPago.innerHTML = totalValorTickets;
+}
+
+btnResumen.addEventListener("click", validarCampos);
+
+const resetValidarCampos =() =>{
+    quitarError();
+    totalPago.innerHTML = "";
+}
+
+btnBorrar.addEventListener("click", resetValidarCampos);
+/*
+    }if (correo.value=== ""){
+        alert("Ingrese un Correo electronico valido");
         correo.focus();
 
     }else if (cantidad.value=== ""){
-        error= "Ingrese la cantidad de personas";
+        alert("Ingrese la cantidad de personas");
         cantidad.focus();
 
     }else if (categoria.value=== null){
-        error = "Seleccione una categoria";
+        alert("Seleccione una categoria");
         categoria.focus();
     
-    }
-    if (error !== ""){
-        alert(error);
-        return false;
+    
     }else {
         document.getElementById('resultado').style.display = "block";
     
@@ -42,19 +125,19 @@ function validarCampos(){
 
     return true;
 }
-
+/*
 function borrar(){
     document.getElementById("miFormulario").reset();
     document.getElementById("resultado").innerHTML = "Total a pagar: $";
     }
  
- function resumen() {
+
+function resumen() {
     
     validarCampos()
     
-
-            let categoria = document.getElementById("categoria").value;
-            let cantidad = parseInt(document.getElementById("cantidad").value);
+            //let categoria = document.getElementById("categoria").value;
+            //let cantidad = parseInt(document.getElementById("cantidad").value);
             let precioBase = 200; // Precio base sin descuento
 
             let precioFinal = 0;
@@ -71,6 +154,4 @@ function borrar(){
             document.getElementById("resultado").innerHTML = `Total a pagar: $ ${precioFinal}`;
         
         }
-
-
-
+    */

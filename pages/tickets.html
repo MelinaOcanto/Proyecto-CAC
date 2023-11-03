@@ -24,13 +24,13 @@
                     <a class="nav-link active" aria-current="page" href="../index.html">La conferencia</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Los oradores</a>
+                    <a class="nav-link" href="../index.html#oradores">Los oradores</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="../index.html">Lugar y Fecha</a>
+                      <a class="nav-link" href="../index.html#lugarFecha">Lugar y Fecha</a>
                     </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="../index.html">Conviertete en orador</a>
+                      <a class="nav-link" href="../index.html#formularioOrador">Conviertete en orador</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link colorVerde" href="#">Comprar Tickets</a>
@@ -74,62 +74,76 @@
     </div>
 
      <section class="formVentas" id="formVentas">
-        <div class="container flex-wrap justify-content-center align-items-center contenidoFormVentas">
-          <form action="" id= "miFormulario" onsubmit="return resumen()" method="get">
-           <div class="vd">
-             <div class="nombreApe">
-                <div class="nombre">
-                      <input type="text" id="nombre" name="name" placeholder="Nombre" required>
-                </div>
-              
-
-               <div class="apellido">
-                  <input type="text" id="apellido" name="Apellido" placeholder="Apellido" required>
-                </div>
+        <div class="container flex-wrap justify-content-center align-items-center contenidoFormVentas">         
+   
+          <form action="" class="ancho">
+            <div class="row gx-2">
+              <div class="col-md mb-3">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="nombre" 
+                required>
               </div>
-                  
-              <div class="email">
-                <input type="email" id="correo" name="correo" placeholder="Correo Electronico" required>  
+              <div class="invalid-feedback" id="errorNombre">
+                <p>Ingrese su nombre</p>
               </div>
-                  
-              <div class="cantidadCat">
-                  <div class="cantidad">
-                    <label for="cantidad">Cantidad</label>
-                    <input type="number" name="cantidad" id="cantidad" placeholder="Cantidad" required>
-                  </div>                      
-                  
-                  <div class="categoria">
-                    <label for="lang">Categoria</label>
-                    <select class="Categoria" id = "categoria" aria-label="seleccion">
-                      <option selected>--Seleccione--</option>
-                      <option value="1">Estudiante</option>
-                      <option value="2">Trainee</option>
-                      <option value="3">Junior</option>
-                    </select>
-                  </div> 
+              <div class="col-md mb-3">
+                <input type="text" class="form-control" placeholder="Apellido" aria-label="apellido"
+                 id="apellido" required>
               </div>
-              <div class="total">
-                <p id = "resultado">Total a pagar: $</p>
+              <div class="invalid-feedback" id="errorApellido">
+                <p>Ingrese su Apellido</p>
               </div>
-              <div class="botonesTickets">
-                <div class="borrar">
-                  <input type="button" name="Borrar" onclick="borrar()" value="Borrar">
-                </div>
-                <div class="resumen">
-                  <input type="button" name="Resumen" onclick="return resumen()" value="Resumen">
-                </div>
-                <div id="error">
-
-                </div>
-               
-                
-              </div>
-              
             </div>
-            </div> 
+            
+            <div row>
+              <div class=" col mb-3">
+                <input type="email" class="form-control" placeholder="Email" aria-label="email" id="email"
+                required>
+              </div>
+              <div class="invalid-feedback" id="errorEmail">
+                <p>Ingrese su e-mail</p>
+
+              </div>
+            </div>
+            <div class="row gx-2">
+              <div class="col-md mb-3">
+                <label for="cantidad" class="form-label">Cantidad</label>
+                <input type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad"
+                id="cantidad" min="1" required>
+              </div>
+              <div class="invalid-feedback" id="errorCantidad">
+                <p>Ingrese cantidad de tickets</p>
+              </div>
+
+              <div class="col-md mb-3">
+                <label for="categoria" class="form-label">Categoria</label>
+                <select class="form-select" aria-label="Categoria" id="categoria">
+                  <option value= ""selected>--Seleccione--</option>
+                  <option value="0">Sin categoria</option>
+                  <option value="1">Estudiante</option>
+                  <option value="2">Trainee</option>
+                  <option value="3">Junior</option>
+                </select>
+              </div>
+              <div class="invalid-feedback" id="errorCategoria">
+                <p>Ingrese una categoria</p>
+              </div>
+
+              <div class="alert alert-primary mt-2 mb-4" role="alert">
+                Total a pagar: $ <span  id="totalPago" class="align-middle"></span>
+              </div>
+              <div class="row gx-2">
+                <div class="col-md mb3 ">
+                  <button type="reset" class="w-100 btn btn-lg btn-form botonesTickets" id="btnBorrar">Borrar</button>
+                </div>
+                <div class="col-md mb-3">
+                  <button type="button" class="w-100 btn btn-lg btn-form botonesTickets" id="btnResumen">Resumen</button>
+              </div>
+             </div>
+
+            </div>
           </form>
         </div>
-      </section>
+    </section>
     
     <footer>
       <div class="footer text-center">

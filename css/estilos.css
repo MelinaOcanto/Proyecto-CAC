@@ -444,109 +444,36 @@ input{
     100% {color: rgba(10, 10, 10, 0.658); }
 }
 
-.contenidoFormVentas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
+.ancho{
+    margin: 0 auto;
+    width: 50%;
 }
 
-.vd input{
-    width: 100%;
-}
-.nombreApe{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    margin: 20px;
-}
 
-.nombre{
-    width: 345px;
-    padding: 0px 10px 0px 10px;
-}
-
-.apellido{
-    width: 345px;
+.mostrar{
+    display: block;
     
 }
-
-.email{
-    width: 700px;
-    margin: 20px;
-    padding: 0px 10px 0px 10px;
-}
-
-.cantidadCat{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    margin: 20px;
-    
-}
-
-.cantidad{
-    width: 340px;
-    height: 50px;
-    padding: 0px 10px 0px 10px;
-}
-
-.categoria{
-    width: 340px;
-}
-
-.categoria select{
-    display: flex;
-    height: 37px;
-    width: 350px;
-}
-
-.total{
-    display: flex;
-    text-align: center;
-    justify-content: start;
-    align-items: center;
-    width: 680px;
-    background: rgb(152, 201, 242);
-    border-radius: 7px;
-    height: 50px;
-    color: rgb(1, 1, 137);
-    margin: 20px;
-    padding: 0px 10px 0px 10px;
-    width: 700px;
-}
-
-.total p{
-    font-size: 17px;
-    text-align: center;
-    margin: 0;
-}
-
-
 
 .botonesTickets{
-    display: flex;
-    width: 700px;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    font-family: 'Noto Sans Shavian', sans-serif;
-   
-}
+    color: white;
+    border-radius: 7px;
+    border-color: white;
+    background-color: rgb(114, 204, 50);
 
+}
+/*
 .borrar input{
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
-    color: white;
+    
     width: 350px;
     height: 45px;
     margin-right: 10px;
-    border-radius: 7px;
-    border-color: white;
-    background-color: rgb(114, 204, 50);
+    
 
 }
 
@@ -564,7 +491,7 @@ input{
     background-color: rgb(114, 204, 50);
 
 }
-
+*/
 
 /* estilado 404 */
 
@@ -888,3 +815,5 @@ input{
 
     
 } 
+*/
+
