@@ -360,7 +360,7 @@ input{
 
 .footer{ 
     text-align: center;
-    height: 10vh;
+    height: 200px;
     background: linear-gradient(to right, rgb(28, 54, 67), rgb(29, 82, 113));
 }
 .footer a{
@@ -463,7 +463,7 @@ input{
     background-color: rgb(114, 204, 50);
 
 }
-/*
+
 .borrar input{
     display: flex;
     align-items: center;
@@ -522,6 +522,8 @@ input{
     .conferencia{
         align-items: center;
         padding-right: 0;
+        margin-bottom: 30px;
+        
     }
     .textoConf{
         padding-bottom: 10px;
@@ -529,6 +531,7 @@ input{
         text-align: center;
         align-items: center;
         justify-content: center;
+        
     
     }
 
@@ -537,7 +540,7 @@ input{
     }
 
     .conferencia h1{
-        font-size: x-large;
+        font-size: large;
         text-align: center;
     }
 
@@ -546,6 +549,8 @@ input{
         padding-top: 0px;
         padding-bottom: 0px;
         font-size: small;
+        padding-bottom: 60px;
+        
     }
     .cards{
         padding-bottom: 50px;
@@ -557,10 +562,12 @@ input{
 
     .lugar{
         width: 100%;
+    
     }
 
     .imgOra{
         width: 100%;
+        object-fit: cover;
     }
 
     .conoceMas{
@@ -585,20 +592,19 @@ input{
     }
 
     .footer {
-        height: 165px;
+        height: 200px;
 
-    }
 
-    
+    }    
     .footer a{
         width: 100px;
         padding: 10px;
     }
-
     .nombreApe{
-        display: flex;
-        flex-direction: column;
+        margin: 20px;
+
     }
+
 
     .nombre{
         padding-bottom: 20px;
@@ -662,20 +668,8 @@ input{
         
     }
 
-    .resumen input{
-        width: 300px;
-        margin: 0px 0px 0px 0px;
-        padding: 0;
-    }
+}/*
 
-    .borrar input{
-        width: 300px;
-        padding: 0;
-        margin: 0;
-    }
-
-}
-/*
 @media screen and (max-width: 576px ){
     .lugar{
     
@@ -689,7 +683,7 @@ input{
 
     .footer{
         padding: 10px;
-        height: 40vh;
+        height: 500px;
     }
 
 
@@ -697,6 +691,8 @@ input{
         width: 150px;
         padding: 15px;
     }
+}
+
 
     .nombreApe{
         display: flex;
@@ -712,8 +708,6 @@ input{
         width: 460px;
         padding: 0px 10px;
     }
-
-
 
     .total{
         width: 460px;
@@ -761,12 +755,10 @@ input{
     .borrar input{
         width: 200px;
 
-    }
-
-}
+    }*/
 
 
-*/
+
 /*
 @media screen and (max-width: 768px){
     .conferencia{ 
