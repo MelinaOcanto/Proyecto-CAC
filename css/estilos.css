@@ -321,23 +321,16 @@ form{
     color: rgb(156, 152, 152);
 }
 
-.name input:hover{
+input:hover{
     background: rgb(223, 218, 218);
 }
 
-.name input:focus{
+input:focus{
     background: rgb(203, 193, 193);
 }
-.name input{
+input{
     width: 210px;
 }
-
-.ap input:hover{
-    background: rgb(223, 218, 218);
-}
-.ap input:focus{
-    background: rgb(203, 193, 193);}
-
 textarea:hover{
     background: rgb(223, 218, 218);
 }
@@ -529,14 +522,6 @@ input{
     color: red
 }
 
-.form-group{
-    display: flex;
-}
-
-.form-control{
-    flex: 1;
-    margin-right: 10px;
-}
 
 
 @media screen and (max-width: 412px ){
