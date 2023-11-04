@@ -321,16 +321,22 @@ form{
     color: rgb(156, 152, 152);
 }
 
-input:hover{
+.name input:hover{
     background: rgb(223, 218, 218);
 }
 
-input:focus{
+.name input:focus{
     background: rgb(203, 193, 193);
 }
-input{
+.name input{
     width: 210px;
 }
+
+.ap input:hover{
+    background: rgb(223, 218, 218);
+}
+.ap input:focus{
+    background: rgb(203, 193, 193);}
 
 textarea:hover{
     background: rgb(223, 218, 218);
@@ -476,7 +482,6 @@ input{
     align-items: center;
     text-align: center;
     justify-content: center;
-    
     width: 350px;
     height: 45px;
     margin-right: 10px;
@@ -524,6 +529,15 @@ input{
     color: red
 }
 
+.form-group{
+    display: flex;
+}
+
+.form-control{
+    flex: 1;
+    margin-right: 10px;
+}
+
 @media screen and (max-width: 412px ){
     .conferencia{
         align-items: center;
@@ -531,9 +545,11 @@ input{
         margin-bottom: 30px;
         
     }
+
     .textoConf{
+        padding-top: 50px;
         padding-bottom: 10px;
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .textoConf p{

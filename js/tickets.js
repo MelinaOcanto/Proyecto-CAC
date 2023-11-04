@@ -29,6 +29,9 @@ const quitarError = () => {
     }
 }
 
+//Esa funcion es usada para recorrer los input e ir validando, el primer for elimina todas clases
+//is-invalid luego en el segundo for se elemina la clase mostrar 
+
 const validarCampos = () => {
 
     quitarError();
@@ -96,7 +99,7 @@ const validarCampos = () => {
     totalPago.innerHTML = totalValorTickets;
 }
 
-btnResumen.addEventListener("click", validarCampos);
+
 
 const resetValidarCampos =() =>{
     quitarError();
@@ -104,7 +107,16 @@ const resetValidarCampos =() =>{
 }
 
 btnBorrar.addEventListener("click", resetValidarCampos);
-/*
+btnResumen.addEventListener("click", validarCampos);
+
+
+
+
+/* Este codigo habia comenzado a hacer pero se me complico para poder mostrar el resultado,
+me arrojaba el resultado antes de validad los campos. 
+
+
+
     }if (correo.value=== ""){
         alert("Ingrese un Correo electronico valido");
         correo.focus();
