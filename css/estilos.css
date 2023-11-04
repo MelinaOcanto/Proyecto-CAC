@@ -524,7 +524,7 @@ input{
     color: red
 }
 
-@media screen and (max-width: 360px ){
+@media screen and (max-width: 412px ){
     .conferencia{
         align-items: center;
         padding-right: 0;
@@ -534,14 +534,10 @@ input{
     .textoConf{
         padding-bottom: 10px;
         font-size: 15px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        
-    
     }
 
     .textoConf p{
+        text-align: center;
         justify-content: center;
     }
 
@@ -599,7 +595,7 @@ input{
     }
 
     .footer {
-        height: 200px;
+        height: 350px;
 
 
     }    
@@ -676,22 +672,26 @@ input{
     }
 
 }
-@media (max-width: 767px) {
-
-    .textoConf, .botones{
-        text-align: center;
-        margin: auto;
-    }
-
-    
-    
-}
-
-
-/*
-
 
 @media screen and (max-width: 576px ){
+
+    .footer .row{
+        
+        flex-direction: column;
+
+    }
+    .footer .col-md-2{
+        width: 100%;
+    
+    }
+
+    .textoConf p{
+        text-align: center;
+    }
+
+}
+
+    /*
     .lugar{
     
         width: 100%;
@@ -780,6 +780,17 @@ input{
 
 
 
+
+@media (max-width: 767px) {
+
+    .textoConf, .botones{
+        text-align: center;
+        margin: auto;
+    }
+
+    
+    
+}
 /*
 @media screen and (max-width: 768px){
     .conferencia{ 
