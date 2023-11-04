@@ -79,6 +79,12 @@ li a{
     padding-bottom: 50px;
 }
 
+.textoConf p{
+    text-align: right;
+    justify-content: right;
+    align-items: end;
+}
+
 .conferencia a{
     color: white;
     text-decoration: none;
@@ -209,6 +215,8 @@ li a{
 /*estilos de lugar y fecha*/
 
 .lugarFecha{
+    display: flex;
+    flex-wrap: wrap;
     padding:  0px 10px;
     border-top: 1px solid white;
     width: 100%;
@@ -219,7 +227,6 @@ li a{
 .lugar{
     background: rgb(53, 58, 64);
     border-left:white 1px solid;
-    width: 50%;
     padding: 0;
 }
 
@@ -360,7 +367,7 @@ input{
 
 .footer{ 
     text-align: center;
-    height: 200px;
+   /* height: 200px;*/
     background: linear-gradient(to right, rgb(28, 54, 67), rgb(29, 82, 113));
 }
 .footer a{
@@ -491,14 +498,13 @@ input{
     background-color: rgb(114, 204, 50);
 
 }
-*/
 
 /* estilado 404 */
 
 .imagen404{
     display: flex;
     margin: 0 auto;
-    width: 270px;
+    width: 300px;
 }
 
 .main404 img{
@@ -558,6 +564,7 @@ input{
     }
     .contenido{
         width: 100%;
+    ;
     }
 
     .lugar{
@@ -668,7 +675,21 @@ input{
         
     }
 
-}/*
+}
+@media (max-width: 767px) {
+
+    .textoConf, .botones{
+        text-align: center;
+        margin: auto;
+    }
+
+    
+    
+}
+
+
+/*
+
 
 @media screen and (max-width: 576px ){
     .lugar{
