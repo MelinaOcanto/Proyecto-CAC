@@ -538,6 +538,7 @@ input{
     margin-right: 10px;
 }
 
+
 @media screen and (max-width: 412px ){
     .conferencia{
         align-items: center;
@@ -549,7 +550,7 @@ input{
     .textoConf{
         padding-top: 50px;
         padding-bottom: 10px;
-        font-size: 17px;
+        font-size: 13px;
     }
 
     .textoConf p{
@@ -558,7 +559,7 @@ input{
     }
 
     .conferencia h1{
-        font-size: large;
+        font-size: xx-large;
         text-align: center;
     }
 
