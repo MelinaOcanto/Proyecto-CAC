@@ -331,6 +331,7 @@ input:focus{
 input{
     width: 210px;
 }
+
 textarea:hover{
     background: rgb(223, 218, 218);
 }
@@ -475,6 +476,7 @@ input{
     align-items: center;
     text-align: center;
     justify-content: center;
+    
     width: 350px;
     height: 45px;
     margin-right: 10px;
@@ -521,7 +523,6 @@ input{
     text-align: center;
     color: red
 }
-
 
 
 @media screen and (max-width: 412px ){
